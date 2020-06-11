@@ -1,3 +1,1 @@
-# linuxterminalcommand.github.io
-
-# this is the first website
+# THIS IS A LINUX COMMANDS PROJECT
