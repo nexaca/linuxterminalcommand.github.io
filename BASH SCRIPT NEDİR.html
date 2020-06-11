@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>BASH SCRIPT NEDİR</title></head>
+<body><h1>BASH SCRIPT NEDİR ? </h1>
+<h2>BASH SCRIPT </h2>
+<p>Dilerseniz &quot;<em>Script nedir?</em>&#39; ve &#39;<em>Bash Script Nedir?</em>&#39;&#39; sorularını uzun bir şekilde anlatmak yerine örneklerle bunu açıklama yoluna gidelim. Linux işletim sisteminizde .sh uzantılı bir dosya açarak scriptinizi bu dosyaya yapıştıralım. </p>
+<pre><code class='language-shell' lang='shell'>#!/bin/bash
+# Basit bir script
+# GOKAYBURUC 10/6/2020
+ 
+echo Klasörün içeriği aşağıda yer almaktadır:
+ls -l
+</code></pre>
+<p>&nbsp;</p>
+<p>Bu scripti terminalde aşağıdaki gibi çalıştırırsanız.</p>
+<pre><code class='language-shell' lang='shell'>$ sh myscript.sh 
+</code></pre>
+<p><strong>Çıktı (Output)</strong>:</p>
+<pre><code class='language-shell' lang='shell'>Here are the files in your current directory:
+total 72
+-rw-rw-r-- 1 gokayburuc gokayburuc 3605 Haz  9 14:00 anki_line_sentences.csv
+-rw-rw-r-- 1 gokayburuc gokayburuc 2579 Haz  9 13:42 anki_sentences.csv
+-rw-rw-r-- 1 gokayburuc gokayburuc 1223 Haz  9 13:40 article.txt
+-rw-rw-r-- 1 gokayburuc gokayburuc 2105 Haz  9 11:50 article_wordlist.csv
+-rw-rw-r-- 1 gokayburuc gokayburuc  583 Haz  9 10:53 google_trans_text.py
+</code></pre>
+<p>&nbsp;</p>
+<p>Şimdi ikinci bir script yazalım. </p>
+<pre><code class='language-shell' lang='shell'>#!/bin/bash
+# mp3 dosyalarini otomatik olarak bir klasöre toplayan script
+mkdir MP3_FILES/
+mv *.mp3 MP3_FILES/
+</code></pre>
+<p>Bu script ise mp3 dosyalarınızı bir klasöre toplamayı sağlar.</p>
+<p><strong>Çıktı (Output)</strong>:</p>
+<pre><code class='language-shell' lang='shell'>~/Music$ ls 
+MP3_FILES  mp3_script.sh
+</code></pre>
+<p>Artık bu scripti çalıştırdığımız klasörde mp3 uzantılı dosyaları MP3_FILES isimli bir klasör oluşturup bu verileri içeriye dolduracaktır.</p>
+</body>
+</html>
